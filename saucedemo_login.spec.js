@@ -8,10 +8,8 @@ test('has title', async ({ page }) => {
   await page.locator('[data-test="password"]').click();
   await page.locator('[data-test="password"]').fill('secret_sauce');
   await page.locator('[data-test="login-button"]').click();
-
   await page.getByRole('button', { name: 'Open Menu' }).click();
   await page.getByRole('link', { name: 'Logout' }).click();
-
   await page.pause();
   
 
